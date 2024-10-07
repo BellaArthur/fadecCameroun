@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Logo_fadec from '../../assets/img/Logo_fadec.png'
 import { Phone, Mail, Facebook, Twitter, Instagram, Youtube,  } from 'lucide-react'
 
@@ -39,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/*site map */}
-        <div className="container px-4 sm:px-8 py-4 flex flex-col mt-12 md:grid md:grid-cols-7  lg:space-x-2">
+        <div className=" px-4 sm:px-8 py-4 flex flex-col mt-12 md:grid md:grid-cols-7  lg:space-x-2">
           <div className="flex flex-col px-12 text-center md:text-left md:px-0 md:col-span-3 ">
             <div className="flex flex-col items-center mb-4">
               <a href="/"><img src={Logo_fadec} alt="" className='h-14 w-14' /></a>
@@ -68,9 +69,9 @@ const Footer = () => {
           <div className="text-center space-y-5 mt-6 md:mt-0 md:col-span-2">
             <h3 className='text-base font-bold'>Menu</h3>
             <ul className='flex flex-col text-sm font-semibold text-gray-500 space-y-2'>
-              <button><a className='hover:text-brandPrimary' href="/programmes/autonomisation-des-femmes-en-milieu-rural">Ataunomisation des des femmes</a></button>
-              <button><a className='hover:text-brandPrimary' href="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">Education des plus défavorisés</a></button>
-              <button><a className='hover:text-brandPrimary' href="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">Education de le jeune fille</a></button>
+              <button><Link className='hover:text-brandPrimary' to="/programmes/autonomisation-des-femmes-en-milieu-rural">Ataunomisation des des femmes</Link></button>
+              <button><Link className='hover:text-brandPrimary' to="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">Education des plus défavorisés</Link></button>
+              <button><Link className='hover:text-brandPrimary' to="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">Education de le jeune fille</Link></button>
             </ul>
           </div>
 
@@ -78,10 +79,10 @@ const Footer = () => {
             <h3 className='text-base font-bold'>Menu</h3>
             <ul className='flex flex-col text-sm font-semibold text-gray-500 space-y-2'>
               <button><a className='hover:text-brandPrimary' href="/">Home</a></button>
-              <button><a className='hover:text-brandPrimary' href="/a-propos">A Propos</a></button>
-              <button><a className='hover:text-brandPrimary' href="/programmes">Programmes</a></button>
-              <button><a className='hover:text-brandPrimary' href="/partenariats">Partenariats</a></button>
-              <button><a className='hover:text-brandPrimary' href="/contacts">Contacts</a></button>
+              <button><Link className='hover:text-brandPrimary' to="/a-propos">A Propos</Link></button>
+              <button><Link className='hover:text-brandPrimary' to="/programmes">Programmes</Link></button>
+              <button><Link className='hover:text-brandPrimary' to="/partenariats">Partenariats</Link></button>
+              <button><Link className='hover:text-brandPrimary' to="/contacts">Contacts</Link></button>
             </ul>
           </div>
           
