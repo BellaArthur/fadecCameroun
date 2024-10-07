@@ -7,7 +7,7 @@ import logo from '../assets/img/Logo_fadec.png'
 const Aproppos = () => {
   return (
     <div>
-        <div className="container flex flex-col px-4 sm:px-8 py-4 bg-green-100">
+        <div className=" flex flex-col px-4 sm:px-8 py-4 bg-green-100">
 
             <div className="flex flex-col space-y-12 md:flex-row md:gap-4 ">
                 <div className="flex flex-col space-y-4 md:w-1/2">
@@ -48,7 +48,7 @@ const Aproppos = () => {
         </div>
 
         {/* Vision and mission container*/}
-        <div className="container px-4 sm:px-8 py-4 mt-4 bg-white">
+        <div className=" px-4 sm:px-8 py-4 mt-4 bg-white">
 
             <div className="flex flex-col items-center space-y-8">
                 <div className="">
@@ -115,7 +115,7 @@ const Aproppos = () => {
         {/*end of vision and mission container */}
 
         {/*Gaols container*/}
-        <div className="container mt-10 px-4 sm:px-8 pt-4 pb-12 bg-green-100">
+        <div className=" mt-10 px-4 sm:px-8 pt-4 pb-12 bg-green-100">
             <div className="text-center mb-6">
                 <h2 className='text-3xl font-bold'>Nos Objectifs</h2>
                 <p className='text-left text-sm font-semibold tex-gray-400 mt-8'>
