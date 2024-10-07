@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import fadec4 from '../assets/img/Fadec4.jpg'
 
 const Education = () => {
@@ -69,20 +70,19 @@ const Education = () => {
                 <div className="">
                     <h3 className='text-base font-bold text-brandPrimary'>Vous pouvez ausi consulter:</h3>
                     <ul className='flex flex-col'>
-                        <a className='text-sm text-brandPrimary hover:text-green-700  hover:underline' href="/programmes/autonomisation-des-femmes-en-milieu-rural">
+                        <Link className='text-sm text-brandPrimary hover:text-green-700  hover:underline' to="/programmes/autonomisation-des-femmes-en-milieu-rural">
                             autonomisation des femmes en milieu rural
-                        </a>
-                        <a className='text-sm text-brandPrimary hover:text-green-700  hover:underline' href="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">
+                        </Link>
+                        <Link className='text-sm text-brandPrimary hover:text-green-700  hover:underline' to="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">
                             aide à l'éducation pour les plus défavorisés
-                        </a>
-                        <a className='text-sm text-brandPrimary hover:text-green-700  hover:underline' href="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">
+                        </Link>
+                        <Link className='text-sm text-brandPrimary hover:text-green-700  hover:underline' to="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">
                             sensibilisation en faveur de l'education de la jeune fille
-                        </a>
+                        </Link>
                     </ul>
                 </div>
                 {/*end of left side*/}
 
-                <div className="md:col-span-2"></div>
             </div>
         </div>
     </div>
