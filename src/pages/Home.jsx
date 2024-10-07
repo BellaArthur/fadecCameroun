@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
 import fadec5 from '../assets/img/Fadec5.jpg'
 import fadec1 from '../assets/img/Fadec1.jpg'
@@ -16,8 +17,8 @@ function Home() {
         <h1 className='text-4xl font-extrabold text-brandPrimary'>FADEC Cameroun</h1>
         <h3 className='text-lg text-center font-semibold px-8 md:px-28'>Bâtir un monde <span className='text-brandSecondary'>meilleur</span> pour les moins privilégiés en Afrique Centrale</h3>
         <div className="flex flex-row items-center gap-4">
-          <button className='px-4 py-2 text-white font-semibold text-sm bg-brandPrimary rounded-lg hover:bg-green-700'><a href="/partenariats">Soutnez-Nous</a></button>
-          <button className='px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><a className='flex' href="/programmes">Activités <ChevronRight className='w-5 h-5' /></a></button>
+          <button className='px-4 py-2 text-white font-semibold text-sm bg-brandPrimary rounded-lg hover:bg-green-700'><Link to="/partenariats">Soutnez-Nous</Link></button>
+          <button className='px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><Link className='flex' to="/programmes">Activités <ChevronRight className='w-5 h-5' /></Link></button>
         </div>
       </div>
       {/*Hero section*/}
@@ -32,7 +33,7 @@ function Home() {
           <p className='text-left text-sm '>
             Crée en 2017, FADECameroun est une association à but non-lucrative dont la mission est de contribuer au bien-être des femmes, des jeunes filles, et des jeunes et d'améliorer leurs vies pour leur plein dévelopement tout en assurant un dévelopement durable pour nos communautés.
           </p>
-          <button className='px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><a className='flex' href="/a-propos">En savoir plus <ChevronRight className='w-5 h-5' /></a></button>
+          <button className='px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><Link className='flex' to="/a-propos">En savoir plus <ChevronRight className='w-5 h-5' /></Link></button>
         </div>
       </div>
       {/*About us*/}
@@ -43,21 +44,21 @@ function Home() {
             <div className="flex flex-col items-start pb-4 rounded-lg border border-gray-200 shadow-md">
                 <img className='object-cover rounded-lg' src={fadec1} alt="" />
                 <h3 className='text-lg font-bold mt-3'>Autonomisation des femmes en milieu rural</h3>
-                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><a className='flex' href="/programmes/autonomisation-des-femmes-en-milieu-rural">En savoir plus <ChevronRight className='w-5 h-5' /></a></button>
+                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><Link className='flex' to="/programmes/autonomisation-des-femmes-en-milieu-rural">En savoir plus <ChevronRight className='w-5 h-5' /></Link></button>
             </div>
             {/*cart */}
             {/*cart */}
             <div className="flex flex-col items-start pb-4 rounded-lg border border-gray-200 shadow-md">
                 <img className='object-cover rounded-lg' src={fadec3} alt="" />
                 <h3 className='text-lg font-bold mt-3'>En faveur de l'éducation de la jeune fille</h3>
-                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><a className='flex' href="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">En savoir plus <ChevronRight className='w-5 h-5' /></a></button>
+                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><Link className='flex' to="/programmes/sensibilisation-en-faveur-de-l-education-de-la-jeune-fille">En savoir plus <ChevronRight className='w-5 h-5' /></Link></button>
             </div>
             {/*cart */}
             {/*cart */}
             <div className="flex flex-col items-start pb-4 rounded-lg border border-gray-200 shadow-md">
                 <img className='object-cover rounded-lg' src={fadec4} alt="" />
                 <h3 className='text-lg font-bold mt-3'>Education pour les plus défavorisés</h3>
-                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><a className='flex' href="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">En savoir plus <ChevronRight className='w-5 h-5' /></a></button>
+                <button className='mt-3 px-4 py-2 flex text-brandSecondary font-semibold text-sm bg-transparent rounded-lg hover:bg-brandSecondary hover:text-white '><Link className='flex' to="/programmes/aide-a-l-edcation-pour-les-plus-défvorisés">En savoir plus <ChevronRight className='w-5 h-5' /></Link></button>
             </div>
             {/*cart */}
         </div>
