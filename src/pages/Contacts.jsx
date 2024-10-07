@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Phone, Mail, Facebook, Twitter, Instagram, Youtube,  } from 'lucide-react'
 
 const Contacts = () => {
@@ -17,7 +18,7 @@ const Contacts = () => {
     }
     return (
     <div className="">
-        <div className='container px-4 sm:px-8 py-4 bg-green-100  '>
+        <div className=' px-4 sm:px-8 py-4 bg-green-100  '>
             <div className="flex flex-col space-y-4 md:flex-row ">
                 <div className='flex flex-col md:w-1/2'>
                     <p className='text-base text-brandPrimary'>Restons en contact</p>
@@ -70,8 +71,8 @@ const Contacts = () => {
                             <div className="flex flex-col space-y-2">
                             <div className='flex flex-col'>
                                 <h3 className='text-sm font-bold'>Votre Nom</h3>
-                                <div className="flex flex-row space-x-2">
-                                    <div className="flex flex-col w-1/2">
+                                <div className="grid grid-cols-2 gap-2">
+                                    <div className="flex flex-col col-span-1">
                                         <input 
                                             type="text" 
                                             name="prenom" 
@@ -82,7 +83,7 @@ const Contacts = () => {
                                             />
                                         <p className='text-sm text-gray-500 text-semibold'>Prenom</p>
                                     </div>
-                                    <div className="flex flex-col w-1/2">
+                                    <div className="flex flex-col col-span-1">
                                         <input 
                                             type="text" 
                                             name="nom" 
@@ -139,8 +140,7 @@ const Contacts = () => {
                 </div>
             </div>
         </div>
-
-        <div className=""></div>
+        
     </div>    
     )
 
